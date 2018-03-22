@@ -258,7 +258,7 @@ We can also sample paper ideas by learning a model on the CMU paper title databa
 
 **A.** No, run the demos. We do six tasks with a variety of networks:
 [1](facades/networkRegDeep.txt)
-[2](charnet_base.txt)
+[2](char/charnet_base.txt)
 [3](image_reco/networkRegDeep.txt)
 [4](image_reco/networkReg.txt)
 [5](mnist/network5.txt)
