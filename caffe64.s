@@ -2912,7 +2912,7 @@ alloc:
     add rax, [heapStart]
 
     /* add the tags */
-    mov rsi, 0xcafedeadbeefcafe
+    mov rsi, 0xcaffe64caffe8664
     mov qword ptr [rax], rsi
     mov [rax+8], r13
 
