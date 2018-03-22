@@ -299,7 +299,7 @@ spent in matrix multiplies, and I don't expect to be able to beat ATLAS at writi
 (1) arguments go in `rdi`, `rsi`, `rdx`, `rcx`, `r8`, `r9` for ints 
 and the low scalar part of `xmm0`, ..., `xmm8` for floats, and
 (2) callee saves are `rbx`, `rbp`, and `r12`, ..., `r15`. The exceptions
-are that (1) some i/o procedures (e.g., `printInt`) save `rdi`, which is typical the file id,
-as a convenience for repeated calls (2) we ignore all stack alignment stuff
+are that (1) some i/o procedures (e.g., `printInt`) save `rdi`
+as a convenience for repeated calls and (2) we ignore all stack alignment stuff.
 
 
