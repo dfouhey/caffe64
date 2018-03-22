@@ -79,6 +79,7 @@ Now train a classification network to solve the task.
     [Training] Epoch 01 / 15 MBIter 120 / 600 LR 0.001000 Loss 0.468066
     [Training] Epoch 01 / 15 MBIter 140 / 600 LR 0.001000 Loss 0.400611
     ...
+    Finished normally in 144s
 
 If you've ever used caffe before you can probably guess at what each of these files does. But let's look at them to see.
 
@@ -127,11 +128,11 @@ Let's try it on test data!
     Parsing net...
     Loading net...
     Loading X...
-    [Testing] Epoch 1 / 1 MBIter 020 / 100 LR 0.000000 Loss 0.000000
-    [Testing] Epoch 1 / 1 MBIter 040 / 100 LR 0.000000 Loss 0.000000
-    [Testing] Epoch 1 / 1 MBIter 060 / 100 LR 0.000000 Loss 0.000000
-    [Testing] Epoch 1 / 1 MBIter 080 / 100 LR 0.000000 Loss 0.000000
-    [Testing] Epoch 1 / 1 MBIter 100 / 100 LR 0.000000 Loss 0.000000
+    [Testing] Epoch 1 / 1 MBIter 020 / 100
+    [Testing] Epoch 1 / 1 MBIter 040 / 100
+    [Testing] Epoch 1 / 1 MBIter 060 / 100
+    [Testing] Epoch 1 / 1 MBIter 080 / 100
+    [Testing] Epoch 1 / 1 MBIter 100 / 100
     Finished normally in 2s
 
 Now the test posteriors have been written to mnist/p.txt!
@@ -244,7 +245,7 @@ lets us sample stuff like this (a particularly nice sample cherry picked).
     call rax
     mov rdi, r14
 
-We can also sample paper ideas
+We can also sample paper ideas by learning a model on the CMU paper title database.
 
 * interaction and bayesian graph for continuous data based on submodular factorization of perspective: a study for analysis
 * learning from metametric and recurrent model automated optimization
@@ -255,7 +256,15 @@ We can also sample paper ideas
 
 **Q.** Is it hardcoded?
 
-**A.** No, run the demos. We do six tasks with a variety of networks
+**A.** No, run the demos. We do six tasks with a variety of networks:
+(1)[blob/master/facades/networkRegDeep.txt]
+(2)[blob/master/char/charnet_base.txt]
+(3)[blob/master/image_reco/networkRegDeep.txt]
+(4)[blob/master/image_reco/networkReg.txt]
+(5)[blob/master/mnist/network5.txt]
+(6)[blob/master/mnist/networkReg.txt]
+(7)[blob/master/rank/ranknet.txt]
+(8)[blob/master/bridges/bridgenet_base.txt]
 
 **Q.** What's the input format?
 

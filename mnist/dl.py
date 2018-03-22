@@ -1,4 +1,5 @@
 #!/usr/bin/python
+#Improved version from Daniel Maturana
 
 import os
 import gzip
