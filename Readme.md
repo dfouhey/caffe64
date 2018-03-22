@@ -302,14 +302,9 @@ and the low scalar part of `xmm0`, ..., `xmm8` for floats, and
 are that (1) some i/o procedures (e.g., `printInt`) save `rdi`
 as a convenience for repeated calls and (2) we ignore all stack alignment stuff.
 
-**Q.** Can I compile this against some C thing?
-
-**A.** You probably need 
-
 ## Contributor List
 
 * David Fouhey wrote caffe64 and the demos.
-* Daniel Maturana PEP8ified a hacky script that downloaded MNIST and contributed
-a large dataset of paper titles that appear in the `char` demo.
+* Daniel Maturana made MNIST download way better and contributed a large dataset of paper titles that appear in the `char` demo.
 * Your name can be here!
 
