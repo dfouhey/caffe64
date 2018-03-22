@@ -257,14 +257,14 @@ We can also sample paper ideas by learning a model on the CMU paper title databa
 **Q.** Is it hardcoded?
 
 **A.** No, run the demos. We do six tasks with a variety of networks:
-[1](blob/master/facades/networkRegDeep.txt)
-[2](blob/master/char/charnet_base.txt)
-[3](blob/master/image_reco/networkRegDeep.txt)
-[4](blob/master/image_reco/networkReg.txt)
-[5](blob/master/mnist/network5.txt)
-[6](blob/master/mnist/networkReg.txt)
-[7](blob/master/rank/ranknet.txt)
-[8](blob/master/bridges/bridgenet_base.txt)
+[1](facades/networkRegDeep.txt)
+[2](charnet_base.txt)
+[3](image_reco/networkRegDeep.txt)
+[4](image_reco/networkReg.txt)
+[5](mnist/network5.txt)
+[6](mnist/networkReg.txt)
+[7](rank/ranknet.txt)
+[8](bridges/bridgenet_base.txt)
 
 **Q.** What's the input format?
 
