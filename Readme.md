@@ -284,12 +284,22 @@ or int format (i.e., "%f" not "%e").
 **A.** Probably faster than a naive implementation in C, but most of the computation is probably
 spent in matrix multiplies, and I don't expect to be able to beat ATLAS at writing gemm.
 
-**Q.** I don't have /dev/urandom, but I do have a recent processor.
+**Q.** I don't have `/dev/urandom`, but I do have a recent processor. What's the workaround?
 
-**A.**  Sure. Replace `randbytes` with:
+**A.**  Sure. Try `grep rdrand /proc/cpuinfo`. If you find it, replace `randbytes` with:
 
     randbytes:
         rdrand rax
         jnc randbytes
         ret
+
+**Q.** What are the calling conventions?
+
+**A.** It's the basically the usual [System V AMD64 ABI](https://en.wikipedia.org/wiki/X86_calling_conventions#System_V_AMD64_ABI): 
+(1) arguments go in `rdi`, `rsi`, `rdx`, `rcx`, `r8`, `r9` for ints 
+and the low scalar part of `xmm0`, ..., `xmm8` for floats, and
+(2) callee saves are `rbx`, `rbp`, and `r12`, ..., `r15`. The exceptions
+are that (1) some i/o procedures (e.g., `printInt`) save `rdi`, which is typical the file id,
+as a convenience for repeated calls (2) we ignore all stack alignment stuff
+
 
