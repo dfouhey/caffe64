@@ -1,0 +1,14 @@
+13
+inp 100 300
+lin 100 -1
+rel
+lin 60 -1
+rel
+lin 60 -1
+rel
+lin 60 -1
+rel
+lin 60 -1
+rel
+lin 10 -1
+sce

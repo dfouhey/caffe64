@@ -1,0 +1,15 @@
+14
+inp 2 5
+lin 200 -1
+rel
+lin 20 -1
+rel
+lin 20 -1
+rel
+lin 20 -1
+rel
+lin 20 -1
+rel
+lin 1 -1
+tnh
+l2l

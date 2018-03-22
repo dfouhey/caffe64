@@ -1,0 +1,8 @@
+7
+inp 784 100
+lin 50 -2
+rel
+lin 10 -2
+rel
+lin 1 -2
+l2l

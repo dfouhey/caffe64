@@ -1,0 +1,12 @@
+11
+inp %d 100
+lin 50 -1
+rel
+lin 50 -1
+rel
+lin 50 -1
+rel
+lin 50 -1
+rel
+lin %d -1
+sce

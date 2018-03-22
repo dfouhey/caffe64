@@ -1,0 +1,9 @@
+8
+inp 2 100
+lin 250 -1
+rel
+lin 250 -1
+rel
+lin 1 -1
+tnh
+l2l

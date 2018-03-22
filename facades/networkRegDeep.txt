@@ -1,0 +1,15 @@
+14
+inp 867 20
+lin 50 -1
+rel
+lin 50 -1
+rel
+lin 50 -1
+rel
+lin 50 -1
+rel
+lin 50 -1
+rel
+lin 1 -1
+tnh
+l2l
