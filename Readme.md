@@ -277,7 +277,7 @@ or int format (i.e., "%f" not "%e").
 
 **Q.** Did you use a compiler or something?
 
-**A.** No, compilers are for losers. For proof, just look at the register usage.
+**A.** No (look at the register usage). Oh, and compilers are for losers. 
 
 **Q.** Is it faster?
 
