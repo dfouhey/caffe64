@@ -257,14 +257,14 @@ We can also sample paper ideas by learning a model on the CMU paper title databa
 **Q.** Is it hardcoded?
 
 **A.** No, run the demos. We do six tasks with a variety of networks:
-[1](facades/networkRegDeep.txt)
-[2](char/charnet_base.txt)
-[3](image_reco/networkRegDeep.txt)
-[4](image_reco/networkReg.txt)
-[5](mnist/network5.txt)
-[6](mnist/networkReg.txt)
-[7](rank/ranknet.txt)
-[8](bridges/bridgenet_base.txt)
+[1](facades/networkRegDeep.txt),
+[2](char/charnet_base.txt),
+[3](image_reco/networkRegDeep.txt),
+[4](image_reco/networkReg.txt),
+[5](mnist/network5.txt),
+[6](mnist/networkReg.txt),
+[7](rank/ranknet.txt),
+[8](bridges/bridgenet_base.txt).
 
 **Q.** What's the input format?
 
@@ -273,16 +273,17 @@ or int format (i.e., "%f" not "%e").
 
 **Q.** It seems that it only does 1D feature vectors?
 
-**A.** Convolution and other inductive biases are only necessary when you have small data! 
+**A.** Convolution and other inductive biases are only necessary when you have small data.
 
 **Q.** Did you use a compiler or something?
 
-**A.** No, that wouldn't be fun. For proof, just look at the register usage.
+**A.** No, compilers are for losers. For proof, just look at the register usage.
 
 **Q.** Is it faster?
 
-**A.** Probably faster than a naive implementation in C, but most of the computation is probably
-spent in matrix multiplies, and I don't expect to be able to beat ATLAS at writing gemm.
+**A.** It's probably faster than a naive implementation in C, but most of the
+computation is probably spent in matrix multiplies, and I don't expect to be
+able to beat ATLAS at writing gemm.
 
 **Q.** I don't have `/dev/urandom`, but I do have a recent processor. What's the workaround?
 
@@ -306,5 +307,4 @@ as a convenience for repeated calls and (2) we ignore all stack alignment stuff.
 
 * David Fouhey wrote caffe64 and the demos.
 * Daniel Maturana made MNIST download way better and contributed a large dataset of paper titles that appear in the `char` demo.
-* Your name can be here!
 
