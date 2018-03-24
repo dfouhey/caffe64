@@ -7,8 +7,8 @@ import numpy as np
 import cv2, pdb, os, sys
 
 #Two network options are provided
-NETWORK_NAME = "image_reco/networkReg.txt"
-OPTIMSETTING_NAME = "image_reco/optimsetting.txt"
+NETWORK_NAME = "networkReg.txt"
+OPTIMSETTING_NAME = "optimsetting.txt"
 
 def setup(imName,expName=""):
     I = cv2.imread(imName).astype(np.float)
