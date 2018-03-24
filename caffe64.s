@@ -114,10 +114,10 @@ Layer struct format (all quads):
 
 
 helpStr: .asciz "caffe64 train network.txt weights.bin optimizer.txt N inputX.txt inputY.txt\n  or\ncaffe64 test network.txt weights.bin N inputX.txt outputY.txt\n"
-.equ helpStrLen, $-helpStr
+.equ helpStrLen, 143
 
 couldntFindStr: .asciz "Couldn't find file "
-.equ couldntFindStrLen, $-couldntFindStr
+.equ couldntFindStrLen, 19
 
 /* status updates */
 loadingXStr: .asciz "Loading X..."
@@ -195,7 +195,7 @@ randBufferPtr: .quad RAND_BUFF_SIZE
 
 
 bannerString: .asciz "   ______        ____ ____         _____  __ __\n  / ____/____ _ / __// __/___     / ___/ / // /\n / /    / __ `// /_ / /_ / _ \\   / __ \\ / // /_\n/ /___ / /_/ // __// __//  __/  / /_/ //__  __/\n\\____/ \\__,_//_/  /_/   \\___/   \\____/   /_/ \n"
-.equ bannerStringLen, $ - bannerString
+.equ bannerStringLen, 238
 
 chrtype: .byte 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 
@@ -240,7 +240,7 @@ m_2oln2: .float 2.8853900817779268
 m_log2e: .float 1.4426950408889634
 
 loadSizemismatchStr: .asciz "Layer doesn't fit, refusing to load\n"
-.equ loadSizemismatchStrLen, $ - loadSizemismatchStr
+.equ loadSizemismatchStrLen, 36
 
 .text
 
