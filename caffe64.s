@@ -8,12 +8,13 @@
 \____/ \__,_//_/  /_/   \___/   \____/   /_/
     
 (c) 2018 The Caffe64 Development Team
+         David Fouhey
 */
 
 
 /* 
-exec train network.txt weights.bin optimizer.txt N inputX.txt inputY.txt
-exec test network.txt weights.bin N inputX.txt outputY.txt
+caffe64 train network.txt weights.bin optimizer.txt N inputX.txt inputY.txt
+caffe64 test network.txt weights.bin N inputX.txt outputY.txt
 
 Net format:
 ------------
