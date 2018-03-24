@@ -7,12 +7,13 @@ network library.
 ## Requirements
 
 Try our simple 3-item checklist to see if you're ready to upgrade to Caffe64.
-* Are you using 64 bit linux on an Intel or AMD processor made after 2006? 
+* Are you using 64 bit *linux* (sorry -- for OSX you need to change the system calls)
+on an Intel or AMD processor made after 2006? 
 (Try `grep sse3 /proc/cpuinfo`)
 * Does your system have `/dev/urandom`?
 * Do you have 12KB or more disk space?
 
-If so, you're set!
+If so, you're set! 
 
 ## Why make a new library?
 
@@ -277,7 +278,11 @@ or int format (i.e., "%f" not "%e").
 
 **Q.** Did you use a compiler or something?
 
-**A.** No (look at the register usage). Oh, and compilers are for losers. 
+**A.** No, compilers are for losers. You can see that this is 100% natural assembly
+due to: register usage (e.g., layer ops always use rbx as the pointer to the layer,
+copying-like-code uses rsi and rdi), the use of a lot of string instructions
+(repne scasb for searches, rep stosd for filling memory), and shady things
+like stuffing a float from an xmm register into a callee-save register.
 
 **Q.** Is it faster?
 
