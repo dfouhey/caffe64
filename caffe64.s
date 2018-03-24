@@ -121,28 +121,28 @@ couldntFindStr: .asciz "Couldn't find file "
 
 /* status updates */
 loadingXStr: .asciz "Loading X..."
-.equ loadingXStrLen, $ - loadingXStr
+.equ loadingXStrLen, 12
 loadingYStr: .asciz "Loading Y..."
-.equ loadingYStrLen, $ - loadingYStr
+.equ loadingYStrLen, 12
 parsingNetStr: .asciz "Parsing net..."
-.equ parsingNetStrLen, $ - parsingNetStr
+.equ parsingNetStrLen, 14
 loadingNetStr: .asciz "Loading net..."
-.equ loadingNetStrLen, $ - loadingNetStr
+.equ loadingNetStrLen, 14
 lrDropStr: .asciz "LR Drop. Multiplying by "
-.equ lrDropStrLen, $ - lrDropStr
+.equ lrDropStrLen, 24
 
 statStringTr1: .asciz "[Training] Epoch "
-.equ statStringTr1Len, $ - statStringTr1
+.equ statStringTr1Len, 17
 statStringTe1: .asciz "[Testing] Epoch "
-.equ statStringTe1Len, $ - statStringTe1
+.equ statStringTe1Len, 16
 statStringTr2: .asciz " MBIter "
-.equ statStringTr2Len, $ - statStringTr2
+.equ statStringTr2Len, 8
 statStringTr3: .asciz " LR "
-.equ statStringTr3Len, $ - statStringTr3
+.equ statStringTr3Len, 4
 statStringTr4: .asciz " Loss "
-.equ statStringTr4Len, $ - statStringTr4
+.equ statStringTr4Len, 6
 endingString: .asciz "Finished normally in "
-.equ endingStringLen, $ - endingString
+.equ endingStringLen, 21
 
 /* local macro that writes a string to stdout */
 .macro emitString strn="" writenl=0
