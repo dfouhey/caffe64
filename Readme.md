@@ -199,7 +199,7 @@ Credit goes to Andrej Karpathy for doing this with
 convnet.js. We provide two networks that yield slightly different styles.
 See `image_reco/image_reco.py`.
 
-<img src='image_reco/df.jpg_reco.png' height=150> <img src='image_reco/hopper_sm.jpg_reco.png' height=150>
+<img src='image_reco/df.jpg_reco.png' height=150> <img src='image_reco/thoreau_sm.jpg_reco.png' height=150> <img src='image_reco/hopper_sm.jpg_reco.png' height=150>
 
 ### Facade prediction
 
