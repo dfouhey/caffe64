@@ -4,6 +4,8 @@ We got sick and tired of complicated dependency wrangling and code bloat, and
 set out to make the simplest and smallest, yet remarkably functional, neural
 network library. 
 
+**We are finally at our April 1 Release (`v4.1.2018`).**
+
 ## Requirements
 
 Try our simple 3-item checklist to see if you're ready to upgrade to Caffe64.
